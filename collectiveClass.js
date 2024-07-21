@@ -1,6 +1,7 @@
 @require https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js 
 @require     https://unpkg.com/idb-keyval@6.0.3/dist/umd.js
 
+alert("1111");
 let nameUpdated = false;
 let titleDiv = null;
 let buttonStyle = ''
@@ -66,7 +67,6 @@ document.getElementById('hideAndRearrange').onclick = ()=> hideAndRearrange();
 
 
 function hideLimit(limit,direction){
-  console.log(getVideos());
   limit = parseInt(limit);
   setLimit(limit);
   let vids = getVideos();
